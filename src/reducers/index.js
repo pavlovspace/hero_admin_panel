@@ -1,29 +1,10 @@
-const initialState = {
-    heroes: [],
-    heroesLoadingStatus: 'idle',
-    filters: []
-}
+import { combineReducers } from 'redux'
+import heroes from './heroesSlice'
+import filters from './filtersSlice'
 
-const reducer = (state = initialState, action) => {
-    switch (action.type) {
-        case 'HEROES_FETCHING':
-            return {
-                ...state,
-                heroesLoadingStatus: 'loading'
-            }
-        case 'HEROES_FETCHED':
-            return {
-                ...state,
-                heroes: action.payload,
-                heroesLoadingStatus: 'idle'
-            }
-        case 'HEROES_FETCHING_ERROR':
-            return {
-                ...state,
-                heroesLoadingStatus: 'error'
-            }
-        default: return state
-    }
-}
+const rootReducer = combineReducers({
+    heroes,
+    filters,
+})
 
-export default reducer;
+export default rootReducer
