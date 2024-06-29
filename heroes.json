@@ -1,29 +1,29 @@
 {
-    "heroes": [
-        {
-            "id": 1,
-            "name": "Первый герой",
-            "description": "Первый герой в рейтинге!",
-            "element": "fire"
-        },
-        {
-            "id": 2,
-            "name": "Неизвестный герой",
-            "description": "Скрывающийся в тени",
-            "element": "wind"
-        },
-        {
-            "id": 3,
-            "name": "Морской герой",
-            "description": "Как аквамен, но не из DC",
-            "element": "water"
-        }
-    ],
-    "filters": [
-        "all",
-        "fire",
-        "water",
-        "wind",
-        "earth"
-    ]
+  "heroes": [
+    {
+      "id": "679e3515-49ed-4227-9e60-87d58eabca2b",
+      "name": "Scott Travis",
+      "description": "The first hero in the ranking!",
+      "element": "fire"
+    },
+    {
+      "id": "d41c0368-4a56-456f-b69e-b9d0a2408e82",
+      "name": "Not Aquaman",
+      "description": "Like Aquaman, but not from DC",
+      "element": "water"
+    },
+    {
+      "id": "49625afe-b3b6-4fb6-9fc6-1eedca417eae",
+      "name": "Bart Simpson",
+      "description": "Huh...",
+      "element": "all"
+    }
+  ],
+  "filters": [
+    "all",
+    "fire",
+    "water",
+    "wind",
+    "earth"
+  ]
 }

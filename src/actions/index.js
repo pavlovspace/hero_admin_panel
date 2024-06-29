@@ -25,6 +25,11 @@ export const heroesDelete = (heroesId) => {
     }
 }
 
+export const heroesAdd = (newHero) => ({
+    type: 'HEROES_ADD',
+    payload: newHero,  
+});
+
 // filters
 export const filtersFetched = (filters) => {
     return {
@@ -45,3 +50,5 @@ export const filterSelected = (filter) => {
         payload: filter,
     }
 }
+
+
