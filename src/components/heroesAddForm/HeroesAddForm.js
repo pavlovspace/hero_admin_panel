@@ -9,7 +9,7 @@ const HeroesAddForm = () => {
     const [formState, setFormState] = useState({
         name: '',
         description: '',
-        element: '',    
+        element: '',
     })
 
     const dispatch = useDispatch()
@@ -53,21 +53,21 @@ const HeroesAddForm = () => {
         <form className="border p-4 shadow-lg rounded" onSubmit={handleSubmit}>
             <div className="mb-3">
                 <label htmlFor="name" className="form-label fs-4">
-                    Имя нового героя
+                    Name of the new hero
                 </label>
-                <input required type="text" name="name" className="form-control" id="name" placeholder="Как меня зовут?" value={formState.name} onChange={handleInputChange} />
+                <input required type="text" name="name" className="form-control" id="name" placeholder="What is my name?" value={formState.name} onChange={handleInputChange} />
             </div>
 
             <div className="mb-3">
                 <label htmlFor="description" className="form-label fs-4">
-                    Описание
+                    Description
                 </label>
                 <textarea
                     required
                     name="description"
                     className="form-control"
                     id="description"
-                    placeholder="Что я умею?"
+                    placeholder="What I can do?"
                     style={{ height: '130px' }}
                     value={formState.description}
                     onChange={handleInputChange}
@@ -76,7 +76,7 @@ const HeroesAddForm = () => {
 
             <div className="mb-3">
                 <label htmlFor="element" className="form-label">
-                Select hero
+                    Select hero
                 </label>
                 <select required className="form-select" id="element" name="element" value={formState.element} onChange={handleInputChange}>
                     <option value="">I own the element...</option>
@@ -89,7 +89,7 @@ const HeroesAddForm = () => {
             </div>
 
             <button type="submit" className="btn btn-primary">
-            Create
+                Create
             </button>
         </form>
     )
